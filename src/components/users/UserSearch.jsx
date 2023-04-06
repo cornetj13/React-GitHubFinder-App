@@ -27,7 +27,7 @@ function UserSearch() {
     }
 
     return (
-        <div className='grid grid-cols-1 xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-2 gap-8 mb-8'> 
+        <div className='grid grid-cols-1 xl:grid-cols-2 gap-8 mb-8 text-center'> 
             <div>
                 <form onSubmit={handleSubmit}>
                     <div className="form-control">
@@ -51,7 +51,7 @@ function UserSearch() {
             </div>
             {users.length > 0 && (
                 <div>
-                    <button onClick={() => dispatch({ type: 'CLEAR_USERS' })} className="btn btn-ghost btn-large">
+                    <button onClick={() => dispatch({ type: 'CLEAR_USERS' })} className="btn btn-ghost btn-large border-2 border-black">
                         Clear
                     </button>
                 </div>
